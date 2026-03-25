@@ -11659,3 +11659,14 @@ if __name__ == "__main__":
             print("Error:", e)
 
         time.sleep(1800)  # runs every 30 mins
+
+
+import os  # Make sure 'import os' is at the top of your file!
+
+# ... rest of your code ...
+
+if __name__ == '__main__':
+    # Railway assigns a port automatically. Default to 5000 for local testing.
+    port = int(os.environ.get("PORT", 5000))
+    # host="0.0.0.0" is required to expose the app to the internet
+    app.run(host="0.0.0.0", port=port)
