@@ -5,3 +5,6 @@ selenium
 webdriver-manager
 lxml
 flask
+google-auth
+google-auth-oauthlib
+google-api-python-client
