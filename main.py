@@ -11631,39 +11631,7 @@ def job_compiler_start():
     return redirect(url_for("job", job_id=job_id, from_page="job-compiler"))
 
 
-if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
-
-
-
-import time
-from datetime import datetime
-
-def run_job_scanner():
-    print("Scanner started...")
-    
-    # 👉 CALL YOUR MAIN FUNCTION HERE
-    # Example:
-    # results = scan_jobs(...)
-    
-    print("Scanner finished...")
-
-
-if __name__ == "__main__":
-    while True:
-        print(f"[{datetime.now()}] Running job scan...")
-        
-        try:
-            run_job_scanner()
-        except Exception as e:
-            print("Error:", e)
-
-        time.sleep(1800)  # runs every 30 mins
-
-
-import os  # Make sure 'import os' is at the top of your file!
-
-# ... rest of your code ...
+import os
 
 if __name__ == '__main__':
     # Railway assigns a port automatically. Default to 5000 for local testing.
